@@ -1,0 +1,208 @@
+#     ts mosi  r/w cmd      reg   data              comment
+#        miso      cmd            data
+[0.0000] 0x8756 W 0x03 PROTCFG    0xAB              # Protection register
+         0x8756   0x03            0xAB 10101011b
+
+[0.0000] 0x87DE W 0x03 PROTCFG    0xEF              # Protection register
+         0x87DE   0x03            0xEF 11101111b
+
+[0.0000] 0x86AD W 0x03 PROTCFG    0x56              # Protection register
+         0x86AD   0x03            0x56 01010110b
+
+[0.0000] 0x8625 W 0x03 PROTCFG    0x12              # Protection register
+         0x8625   0x03            0x12 00010010b
+
+[0.0000] 0x0C00 R 0x06 WDCFG0     0x00              # Protected Watchdog configuration request 0
+         0x80C8   0x00            0x64 01100100b
+
+[0.0000] 0x0E01 R 0x07 WDCFG1     0x00              # Protected Watchdog configuration request 1
+         0x81ED   0x00            0xF6 11110110b
+
+[0.0000] 0x87BE W 0x03 PROTCFG    0xDF              # Protection register
+         0x87BE   0x03            0xDF 11011111b
+
+[0.0001] 0x8668 W 0x03 PROTCFG    0x34              # Protection register
+         0x8668   0x03            0x34 00110100b
+
+[0.0001] 0x877D W 0x03 PROTCFG    0xBE              # Protection register
+         0x877D   0x03            0xBE 10111110b
+
+[0.0001] 0x8795 W 0x03 PROTCFG    0xCA              # Protection register
+         0x8795   0x03            0xCA 11001010b
+
+[0.0001] 0x8756 W 0x03 PROTCFG    0xAB              # Protection register
+         0x8756   0x03            0xAB 10101011b
+
+[0.0001] 0x87DE W 0x03 PROTCFG    0xEF              # Protection register
+         0x87DE   0x03            0xEF 11101111b
+
+[0.0002] 0x86AD W 0x03 PROTCFG    0x56              # Protection register
+         0x86AD   0x03            0x56 01010110b
+
+[0.0002] 0x8625 W 0x03 PROTCFG    0x12              # Protection register
+         0x8625   0x03            0x12 00010010b
+
+[0.0002] 0x8E3C W 0x07 WDCFG1     0x1E              # Protected Watchdog configuration request 1
+         0x8E3C   0x07            0x1E 00011110b
+
+[0.0002] 0x8DDE W 0x06 WDCFG0     0xEF              # Protected Watchdog configuration request 0
+         0x8DDE   0x06            0xEF 11101111b
+
+[0.0002] 0x8A01 W 0x05 SYSPCFG1   0x00              # Protected System configuration request 1
+         0x8A01   0x05            0x00 00000000b
+
+[0.0002] 0x9009 W 0x08 FWDCFG     0x04              # Protected Functional watchdog configuration request 0
+         0x9009   0x08            0x04 00000100b
+
+[0.0002] 0x9201 W 0x09 WWDCFG0    0x00              # Protected Window watchdog configuration request 0
+         0x9201   0x09            0x00 00000000b
+
+[0.0002] 0x9402 W 0x0A WWDCFG1    0x01              # Protected Window watchdog configuration request 1
+         0x9402   0x0A            0x01 00000001b
+
+[0.0002] 0x87BE W 0x03 PROTCFG    0xDF              # Protection register
+         0x87BE   0x03            0xDF 11011111b
+
+[0.0002] 0x8668 W 0x03 PROTCFG    0x34              # Protection register
+         0x8668   0x03            0x34 00110100b
+
+[0.0002] 0x877D W 0x03 PROTCFG    0xBE              # Protection register
+         0x877D   0x03            0xBE 10111110b
+
+[0.0002] 0x8795 W 0x03 PROTCFG    0xCA              # Protection register
+         0x8795   0x03            0xCA 11001010b
+
+[0.0003] 0x2E00 R 0x17 WWDSCMD    0x00              # Window watchdog service command
+         0x8001   0x00            0x00 00000000b
+
+[0.0003] 0xAE02 W 0x17 WWDSCMD    0x01              # Window watchdog service command
+         0xAE02   0x17            0x01 00000001b
+
+[0.0003] 0x5401 R 0x2A FWDSTAT0   0x00              # Functional watchdog status 0
+         0x8061   0x00            0x30 00110000b
+
+[0.0003] 0xB1FF W 0x18 FWDRSP     0xFF              # Functional watchdog response command
+         0xB1FF   0x18            0xFF 11111111b
+
+[0.0004] 0xB01F W 0x18 FWDRSP     0x0F              # Functional watchdog response command
+         0xB01F   0x18            0x0F 00001111b
+
+[0.0004] 0xB1E1 W 0x18 FWDRSP     0xF0              # Functional watchdog response command
+         0xB1E1   0x18            0xF0 11110000b
+
+[0.0004] 0xB200 W 0x19 FWDRSPSYNC 0x00              # Functional watchdog response command with synchronization
+         0xB200   0x19            0x00 00000000b
+
+[0.0004] 0xABD5 W 0x15 DEVCTRL    0xEA              # Device control request
+         0xABD5   0x15            0xEA 11101010b
+
+[0.0005] 0xAC2B W 0x16 DEVCTRLN   0x15              # Device control inverted request
+         0xAC2B   0x16            0x15 00010101b
+
+[0.0242] 0x2E00 R 0x17 WWDSCMD    0x00              # Window watchdog service command
+         0x8103   0x00            0x81 10000001b
+
+[0.0242] 0xAE01 W 0x17 WWDSCMD    0x00              # Window watchdog service command
+         0xAE01   0x17            0x00 00000000b
+
+[0.0242] 0x5401 R 0x2A FWDSTAT0   0x00              # Functional watchdog status 0
+         0x80FE   0x00            0x7F 01111111b
+
+[0.0242] 0x3801 R 0x1C IF         0x00              # Interrupt flags
+         0x8010   0x00            0x08 00001000b
+
+[0.0242] 0x4001 R 0x20 MONSF0     0x00              # Monitor status flags 0
+         0x8001   0x00            0x00 00000000b
+
+[0.0242] 0x4200 R 0x21 MONSF1     0x00              # Monitor status flags 1
+         0x8001   0x00            0x00 00000000b
+
+[0.0242] 0x4400 R 0x22 MONSF2     0x00              # Monitor status flags 2
+         0x8002   0x00            0x01 00000001b
+
+[0.0243] 0x4601 R 0x23 MONSF3     0x00              # Monitor status flags 3
+         0x8001   0x00            0x00 00000000b
+
+[0.0243] 0xC000 W 0x20 MONSF0     0x00              # Monitor status flags 0
+         0xC000   0x20            0x00 00000000b
+
+[0.0243] 0xC201 W 0x21 MONSF1     0x00              # Monitor status flags 1
+         0xC201   0x21            0x00 00000000b
+
+[0.0243] 0xC402 W 0x22 MONSF2     0x01              # Monitor status flags 2
+         0xC402   0x22            0x01 00000001b
+
+[0.0243] 0xC600 W 0x23 MONSF3     0x00              # Monitor status flags 3
+         0xC600   0x23            0x00 00000000b
+
+[0.0243] 0xB811 W 0x1C IF         0x08              # Interrupt flags
+         0xB811   0x1C            0x08 00001000b
+
+[0.0243] 0x3801 R 0x1C IF         0x00              # Interrupt flags
+         0x8002   0x00            0x01 00000001b
+
+[0.0243] 0x3A00 R 0x1D SYSSF      0x00              # System status flags 
+         0x8004   0x00            0x02 00000010b
+
+[0.0243] 0xBA04 W 0x1D SYSSF      0x02              # System status flags 
+         0xBA04   0x1D            0x02 00000010b
+
+[0.0244] 0xB803 W 0x1C IF         0x01              # Interrupt flags
+         0xB803   0x1C            0x01 00000001b
+
+[0.0244] 0x3801 R 0x1C IF         0x00              # Interrupt flags
+         0x8001   0x00            0x00 00000000b
+
+[0.1240] 0x2E00 R 0x17 WWDSCMD    0x00              # Window watchdog service command
+         0x8001   0x00            0x00 00000000b
+
+[0.1240] 0xAE02 W 0x17 WWDSCMD    0x01              # Window watchdog service command
+         0xAE02   0x17            0x01 00000001b
+
+[0.1240] 0xB002 W 0x18 FWDRSP     0x01              # Functional watchdog response command
+         0xB002   0x18            0x01 00000001b
+
+[0.1240] 0xB1E2 W 0x18 FWDRSP     0xF1              # Functional watchdog response command
+         0xB1E2   0x18            0xF1 11110001b
+
+[0.1240] 0xB01C W 0x18 FWDRSP     0x0E              # Functional watchdog response command
+         0xB01C   0x18            0x0E 00001110b
+
+[0.1241] 0xB3FD W 0x19 FWDRSPSYNC 0xFE              # Functional watchdog response command with synchronization
+         0xB3FD   0x19            0xFE 11111110b
+
+[0.2240] 0x2E00 R 0x17 WWDSCMD    0x00              # Window watchdog service command
+         0x8103   0x00            0x81 10000001b
+
+[0.2240] 0xAE01 W 0x17 WWDSCMD    0x00              # Window watchdog service command
+         0xAE01   0x17            0x00 00000000b
+
+[0.2240] 0x5401 R 0x2A FWDSTAT0   0x00              # Functional watchdog status 0
+         0x80E5   0x00            0x72 01110010b
+
+[0.3241] 0x2E00 R 0x17 WWDSCMD    0x00              # Window watchdog service command
+         0x8001   0x00            0x00 00000000b
+
+[0.3242] 0xAE02 W 0x17 WWDSCMD    0x01              # Window watchdog service command
+         0xAE02   0x17            0x01 00000001b
+
+[0.3242] 0xB1D2 W 0x18 FWDRSP     0xE9              # Functional watchdog response command
+         0xB1D2   0x18            0xE9 11101001b
+
+[0.3242] 0xB032 W 0x18 FWDRSP     0x19              # Functional watchdog response command
+         0xB032   0x18            0x19 00011001b
+
+[0.3242] 0xB1CC W 0x18 FWDRSP     0xE6              # Functional watchdog response command
+         0xB1CC   0x18            0xE6 11100110b
+
+[0.3242] 0xB22D W 0x19 FWDRSPSYNC 0x16              # Functional watchdog response command with synchronization
+         0xB22D   0x19            0x16 00010110b
+
+[0.4240] 0x2E00 R 0x17 WWDSCMD    0x00              # Window watchdog service command
+         0x8103   0x00            0x81 10000001b
+
+[0.4240] 0xAE01 W 0x17 WWDSCMD    0x00              # Window watchdog service command
+         0xAE01   0x17            0x00 00000000b
+
+[0.4240] 0x5401 R 0x2A FWDSTAT0   0x00              # Functional watchdog status 0
+         0x80EA   0x00            0x75 01110101b
